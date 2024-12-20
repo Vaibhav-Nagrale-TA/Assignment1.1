@@ -1,0 +1,759 @@
+Script started on 2024-12-16 02:57:57+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h(base) ]0;vaibhav@TIGER06026: ~ [01;32mvaibhav@TIGER06026[00m:[01;34m~[00m$ 
+[K
+(base) ]0;vaibhav@TIGER06026: ~ [01;32mvaibhav@TIGER06026[00m:[01;34m~[00m$ mkdir git_work
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~ [01;32mvaibhav@TIGER06026[00m:[01;34m~[00m$ cd git_work/
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git --version
+[?2004l
+git version 2.43.0
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git[K[K[Kls
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ pwd
+[?2004l
+/home/vaibhav/git_work
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git init
+[?2004l
+[33mhint: Using 'master' as the name for the initial branch. This default branch name[m
+[33mhint: is subject to change. To configure the initial branch name to use in all[m
+[33mhint: of your new repositories, which will suppress this warning, call:[m
+[33mhint: [m
+[33mhint: 	git config --global init.defaultBranch <name>[m
+[33mhint: [m
+[33mhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and[m
+[33mhint: 'development'. The just-created branch can be renamed via this command:[m
+[33mhint: [m
+[33mhint: 	git branch -m <name>[m
+Initialized empty Git repository in /home/vaibhav/git_work/.git/
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git status
+[?2004l
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ touch README.md
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls
+[?2004l
+README.md
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git status
+[?2004l
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mREADME.md[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git add README.md 
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git status
+[?2004l
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   README.md[m
+
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ touch req.txt
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls
+[?2004l
+README.md  req.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git add [K[K[K[Kstatus
+[?2004l
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   README.md[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mreq.txt[m
+
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git add .
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls
+[?2004l
+README.md  req.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git status
+[?2004l
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	[32mnew file:   README.md[m
+	[32mnew file:   req.txt[m
+
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ gjit[K[K[Kit commit -m ""c"r"e"a"t"e"d" "r"e" [A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca"
+d"m"e" "a"n"d" "t"x"t" "f"i"l"e"
+[?2004l
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <vaibhav@TIGER06026.tigeranalytics.local>) not allowed
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [7mgit config --global user.e[27m[7mm[27m[7mail "you@example.com"[27m [A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git config --global user.email "you@example.com"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"v"a"i"b"h"a"v"."n"a"g"r"a"l"e"@"t"i"g"e"r"a"n"a"l"y"t"i"c"s"."c"o"m"
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [7mgit config --global user.n[27m[7ma[27m[7mme "Your Name"[27m [A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git config --global user.name "Your Name"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"V"a"i"b"h"a"v" "N"a"g"r"a"l"e"
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git config --global user.name "Vaibhav Nagrale"[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemail "vaibhav.nagrale@tigeranalytics.com"[A[C[C[Cmmit -m "created read[24Pme and txt file"
+[?2004l
+[master (root-commit) 480746f] created readme and txt file
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+ create mode 100644 req.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git status
+[?2004l
+On branch master
+nothing to commit, working tree clean
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git  [Kremote add origin [7mhttp[27m[7ms[27m[7m://github.com/Vaibhav-Nagrale/git_work.git[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/Vaibhav-Nagrale/git_work.git
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git push[K[K[K[K[K[K[K[K         git branch
+[?2004l
+[?1h=
+* [32mmaster[m[m
+
+[K[?1l>[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git push origin master
+[?2004l
+Username for 'https://github.com': Vaibhav-Nagrale
+Password for 'https://Vaibhav-Nagrale@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Vaibhav-Nagrale/git_work.git/'
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git push origin master
+[?2004l
+Username for 'https://github.com': ^[[A^[[A        Vaibhavc -Nagrale
+Password for 'https://Vaibhav-Nagrale@github.com': 
+remote: Permission to Vaibhav-Nagrale/git_work.git denied to Vaibhav-Nagrale.
+fatal: unable to access 'https://github.com/Vaibhav-Nagrale/git_work.git/': The requested URL returned error: 403
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [7mgithub_pat_11BNXPAVQ0xkYw0[27m[7mv[27m[7mLuUZR7_rCLcYMIcfroqLCWAdiiecWkcilfiVyhib8TZCJjqrZpRHJMD373xvFXm[27m[7mm[27m[7mvC[27m[A[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ github_pat_11BNXPAVQ0xkYw0vLuUZR7_rCLcYMIcfroqLCWAdiiecWkcilfiVyhib8TZCJjqrZpRHJMD373xvFXmm[1Pv[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K      git push origin master
+[?2004l
+Username for 'https://github.com': ^[[A    Vaibhav-Nagrale
+Password for 'https://Vaibhav-Nagrale@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Vaibhav-Nagrale/git_work.git/'
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git push origin master
+[?2004l
+Username for 'https://github.com': V
+Password for 'https://V@github.com': 
+remote: Permission to Vaibhav-Nagrale/git_work.git denied to Vaibhav-Nagrale.
+fatal: unable to access 'https://github.com/Vaibhav-Nagrale/git_work.git/': The requested URL returned error: 403
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git push origin master
+[?2004l
+Username for 'https://github.com': Vaibhv av-Nagrale
+Password for 'https://Vaibhav-Nagrale@github.com': 
+remote: Permission to Vaibhav-Nagrale/git_work.git denied to Vaibhav-Nagrale.
+fatal: unable to access 'https://github.com/Vaibhav-Nagrale/git_work.git/': The requested URL returned error: 403
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ gits [K[K status
+[?2004l
+On branch master
+nothing to commit, working tree clean
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ exit
+[?2004l
+exit
+
+Script done on 2024-12-16 03:22:43+00:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2024-12-16 04:38:14+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h(base) ]0;vaibhav@TIGER06026: ~ [01;32mvaibhav@TIGER06026[00m:[01;34m~[00m$ '[K ls
+[?2004l
+[0m[01;34mDesktop[0m  Miniconda3-latest-Linux-x86_64.sh  [01;34mgit_work[0m  [01;34mjupyter[0m  [01;34mminiconda3[0m  my_unix_session
+[?2004h(base) ]0;vaibhav@TIGER06026: ~ [01;32mvaibhav@TIGER06026[00m:[01;34m~[00m$ cd git_work/
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls
+[?2004l
+README.md  req.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls -a
+[?2004l
+[0m[01;34m.[0m  [01;34m..[0m  [01;34m.git[0m  README.md  req.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git status
+[?2004l
+On branch master
+nothing to commit, working tree clean
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git remote set-url origin https:.[K//[7mgithub_pat_11BNXPAVQ0xkYw0vLuUZR7_rCLcYMIcfroqLC[27m[7mW[27m[7mAdiiecWkcilfiVyhib8TZCJjqrZpRHJMD373xvFXmmvC[27m [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C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@github.com/[7mVaibhav-Nagrale/git_work[27mVaibhav-Nagrale/git_work
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git push origin main[K[Kster
+[?2004l
+remote: Permission to Vaibhav-Nagrale/git_work.git denied to Vaibhav-Nagrale.
+fatal: unable to access 'https://github.com/Vaibhav-Nagrale/git_work/': The requested URL returned error: 403
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ gti [K[K[Kit remote set-url origin https://[7m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[27m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@github. 
+com/[7mVaibhav-Nagrale/git_work[27m 
+[C[C[C[CVaibhav-Nagrale/git_work
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git push origin master
+[?2004l
+Enumerating objects: 3, done.
+Counting objects:  33% (1/3)
+Counting objects:  66% (2/3)
+Counting objects: 100% (3/3)
+Counting objects: 100% (3/3), done.
+Delta compression using up to 14 threads
+Compressing objects:  50% (1/2)
+Compressing objects: 100% (2/2)
+Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)
+Writing objects:  66% (2/3)
+Writing objects: 100% (3/3)
+Writing objects: 100% (3/3), 246 bytes | 123.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Vaibhav-Nagrale/git_work
+ * [new branch]      master -> master
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ 
+[K
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git chec k[K[Kkout -b tamlep_wor 
+k
+[?2004l
+Switched to a new branch 'tamlep_work'
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git branch 
+[?2004l
+[?1h=
+  master[m[m
+* [32mtamlep_work[m[m
+
+[K[?1l>[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git checkout master
+[?2004l
+Switched to branch 'master'
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git branch
+[?2004l
+[?1h=
+* [32mmaster[m[m
+  tamlep_work[m[m
+
+[K[?1l>[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git branch tamlep_work 
+[?2004l
+fatal: a branch named 'tamlep_work' already exists
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git checkout tamlep_work 
+[?2004l
+Switched to branch 'tamlep_work'
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ branch
+[?2004l
+Command 'branch' not found, but can be installed with:
+sudo apt install rheolef
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git branch
+[?2004l
+[?1h=
+  master[m[m
+* [32mtamlep_work[m[m
+
+[K[?1l>[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$  gir [K[Kt push--se[K[K[K[K
+[?2004l
+fatal: The current branch tamlep_work has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin tamlep_work
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [7mgit push --set-upstream or[27m[7mi[27m[7mgin tamlep_work[27m[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git push --set-upstream origin tamlep_work
+[?2004l
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'tamlep_work' on GitHub by visiting:[K
+remote:      https://github.com/Vaibhav-Nagrale/git_work/pull/new/tamlep_work[K
+remote: 
+To https://github.com/Vaibhav-Nagrale/git_work
+ * [new branch]      tamlep_work -> tamlep_work
+branch 'tamlep_work' set up to track 'origin/tamlep_work'.
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ touch new_file.txt
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ gits [K[K stau[Ktus
+[?2004l
+On branch tamlep_work
+Your branch is up to date with 'origin/tamlep_work'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mnew_file.txt[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git add new_file.txt 
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git commit -m "new)[K_file ad 
+ded"
+[?2004l
+[tamlep_work ddb0305] new_file added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new_file.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ gir p[K[K[Kt push
+[?2004l
+Enumerating objects: 3, done.
+Counting objects:  33% (1/3)
+Counting objects:  66% (2/3)
+Counting objects: 100% (3/3)
+Counting objects: 100% (3/3), done.
+Delta compression using up to 14 threads
+Compressing objects:  50% (1/2)
+Compressing objects: 100% (2/2)
+Compressing objects: 100% (2/2), done.
+Writing objects:  50% (1/2)
+Writing objects: 100% (2/2)
+Writing objects: 100% (2/2), 269 bytes | 269.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Vaibhav-Nagrale/git_work
+   480746f..ddb0305  tamlep_work -> tamlep_work
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ gie [K[Kt checkout master
+[?2004l
+Switched to branch 'master'
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls
+[?2004l
+README.md  req.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git sb[K[Kbranch
+[?2004l
+[?1h=
+* [32mmaster[m[m
+  tamlep_work[m[m
+
+[K[?1l>[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git merge te[Kamlep_work 
+[?2004l
+Updating 480746f..ddb0305
+Fast-forward
+ new_file.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new_file.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls
+[?2004l
+README.md  new_file.txt  req.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git psh
+[?2004l
+git: 'psh' is not a git command. See 'git --help'.
+
+The most similar command is
+	push
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git push
+[?2004l
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [7mgit push --set-upstream or[27m[7mi[27m[7mgin master[27m[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git push --set-upstream origin master
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Corig[1P[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Corigi[1P[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Corigin[1P master[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Corigin [1Pmaster[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Corigin m[1Paster[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Corigin ma[1Pster[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Corigin mas[1Pter[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Corigin mast[1Per[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Corigin maste[1Pr[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Corigin master[K[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Corigin master 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P
+[?2004l
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Vaibhav-Nagrale/git_work
+   480746f..ddb0305  master -> master
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git status
+[?2004l
+On branch master
+nothing to commit, working tree clean
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls
+[?2004l
+README.md  new_file.txt  req.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git pull
+[?2004l
+remote: Enumerating objects: 4, done.[K
+remote: Counting objects:  25% (1/4)[K
+remote: Counting objects:  50% (2/4)[K
+remote: Counting objects:  75% (3/4)[K
+remote: Counting objects: 100% (4/4)[K
+remote: Counting objects: 100% (4/4), done.[K
+remote: Compressing objects:  50% (1/2)[K
+remote: Compressing objects: 100% (2/2)[K
+remote: Compressing objects: 100% (2/2), done.[K
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)[K
+Unpacking objects:  33% (1/3)
+Unpacking objects:  66% (2/3)
+Unpacking objects: 100% (3/3)
+Unpacking objects: 100% (3/3), 961 bytes | 480.00 KiB/s, done.
+From https://github.com/Vaibhav-Nagrale/git_work
+   ddb0305..92af768  master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ gti [K[K[Kit pull origin master
+[?2004l
+From https://github.com/Vaibhav-Nagrale/git_work
+ * branch            master     -> FETCH_HEAD
+Updating ddb0305..92af768
+Fast-forward
+ test.txt | 1 [32m+[m
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls
+[?2004l
+README.md  new_file.txt  req.txt  test.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ cat test.txt 
+[?2004l
+temporary test file created.
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$  [K touch wor[K[Kwon[K[K[Krong_commit.txt
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git ad [Kd .
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git status
+[?2004l
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   wrong_commit.txt[m
+
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ f[Kgit commit -m "h"
+[?2004l
+[master 5e11619] h
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 wrong_commit.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git log
+[?2004l
+[?1h=
+[33mcommit 5e11619b89b5332f33f5eb7b7c923181bf056216[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m[m
+Author: Vaibhav Nagrale <vaibhav.nagrale@tigeranalytics.com>[m
+Date:   Mon Dec 16 05:01:38 2024 +0000[m
+[m
+    h[m
+[m
+[33mcommit 92af7685ac9903d7607b54cced9f9324e5543244[m[33m ([m[1;31morigin/master[m[33m)[m[m
+Author: Vaibhav-Nagrale <vaibhav.nagrale@tigeranalytics.com>[m
+Date:   Mon Dec 16 10:27:36 2024 +0530[m
+[m
+    Create test.txt[m
+    [m
+    temporary test file created[m
+[m
+[33mcommit ddb030590d86c2611b06ccfadf4618ef0a927d60[m[33m ([m[1;31morigin/tamlep_w[m [33m[m[33m[m[1;31mork[m[33m, [m[1;32mtamlep_work[m[33m)[m[m
+Author: Vaibhav Nagrale <vaibhav.nagrale@tigeranalytics.com>[m
+Date:   Mon Dec 16 04:49:24 2024 +0000[m
+[m
+    new_file added[m
+[m
+[33mcommit 480746fdd2c680bfa8285d8a228db94afbefcdb0[m[m
+Author: Vaibhav Nagrale <vaibhav.nagrale@tigeranalytics.com>[m
+Date:   Mon Dec 16 03:02:54 2024 +0000[m
+[m
+    created readme and txt file[m
+
+[K[?1l>[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git commit ammend
+[?2004l
+error: pathspec 'ammend' did not match any file(s) known to git
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git commit ammend-ammend-ammend
+[?2004l
+error: unknown option `ammend'
+usage: git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]
+                  [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|reword):]<commit>)]
+                  [-F <file> | -m <msg>] [--reset-author] [--allow-empty]
+                  [--allow-empty-message] [--no-verify] [-e] [--author=<author>]
+                  [--date=<date>] [--cleanup=<mode>] [--[no-]status]
+                  [-i | -o] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+                  [(--trailer <token>[(=|:)<value>])...] [-S[<keyid>]]
+                  [--] [<pathspec>...]
+
+    -q, --[no-]quiet      suppress summary after successful commit
+    -v, --[no-]verbose    show diff in commit message template
+
+Commit message options
+    -F, --[no-]file <file>
+                          read message from file
+    --[no-]author <author>
+                          override author for commit
+    --[no-]date <date>    override date for commit
+    -m, --[no-]message <message>
+                          commit message
+    -c, --[no-]reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --[no-]reuse-message <commit>
+                          reuse message from specified commit
+    --[no-]fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --[no-]squash <commit>
+                          use autosquash formatted message to squash specified commit
+    --[no-]reset-author   the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --[no-]signoff    add a Signed-off-by trailer
+    -t, --[no-]template <file>
+                          use specified template file
+    -e, --[no-]edit       force edit of commit
+    --[no-]cleanup <mode> how to strip spaces and #comments from message
+    --[no-]status         include status in commit message template
+    -S, --[no-]gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --[no-]all        commit all changed files
+    -i, --[no-]include    add specified files to index for commit
+    --[no-]interactive    interactively add files
+    -p, --[no-]patch      interactively add changes
+    -o, --[no-]only       commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --verify              opposite of --no-verify
+    --[no-]dry-run        show what would be committed
+    --[no-]short          show status concisely
+    --[no-]branch         show branch information
+    --[no-]ahead-behind   compute full ahead/behind values
+    --[no-]porcelain      machine-readable output
+    --[no-]long           show status in long format (default)
+    -z, --[no-]null       terminate entries with NUL
+    --[no-]amend          amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    --post-rewrite        opposite of --no-post-rewrite
+    -u, --[no-]untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git commit am[K[K--amend
+[?2004l
+hint: Waiting for your editor to close the file... [?2004h[?1049h[22;0;0t[1;37r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[35;26H(B[0;7m[ Reading... ](B[m[35;24H(B[0;7m[ Read 11 lines ](B[m[H(B[0;7m       /home/vaibhav/git_work/.git/COMMIT_EDITMSG               [1;63H(B[m
+[36d(B[0;7m^G(B[m Help     (B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute
+[37d(B[0;7m^X(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify
+[2dh[4d[36m# Please enter the commit message for your changes. Lines start[39m(B[0;7m>[5;1H(B[0m[36m# with '#' will be ignored, and an empty message aborts the com[39m(B[0;7m>[6;1H(B[0m[36m#[7d# Date:      Mon Dec 16 05:01:38 2024 +0000
+[8d#[9d# On branch master
+[10d# Changes to be committed:
+[11d#[38;5;208m       [36mnew file:   wrong_commit.txt
+[12d#[2d[39m(B[m[?12l[?25h[?25l[?12l[?25hh[?25l[1;51H(B[0;7m*[63G(B[m[?12l[?25h
+[2d[K[?25l[?12l[?25hn[?25l[?12l[?25he[?25l[?12l[?25hw[?25l[?12l[?25h [?25l[?12l[?25hf[?25l[?12l[?25hi[?25l[?12l[?25hl[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25ha[?25l[?12l[?25hd[?25l[?12l[?25he[?25l[?12l[?25h [?25l[?12l[?25hd[?25l[?12l[?25he[?25l[?12l[?25hd[?25l[?12l[?25h.[?25l
+[35d[K[36;13H    (B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append[49G(B[0;7mM-B(B[m Backup File[37;2H(B[0;7mC(B[m Cancel       (B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m Browse[K
+[35d(B[0;7mFile Name to Write: /home/vaibhav/git_work/.git/COMMIT_EDITMSG  [35;63H(B[m[?12l[?25h[?25l[35;25H[1K (B[0;7m[ Writing... ](B[m[K[1;51H(B[0;7m [63G(B[m[35;24H(B[0;7m[ Wrote 11 lines ](B[m[36;13H(B[0;7m^O(B[m Write Out(B[0;7m^W(B[m Where Is (B[0;7m^K(B[m Cut[49G(B[0;7m^T(B[m Execute[K[37;2H(B[0;7mX(B[m Exit     (B[0;7m^R(B[m Read File(B[0;7m^\(B[m Replace  (B[0;7m^U(B[m Paste    (B[0;7m^J(B[m Justify[?12l[?25h[2;16H[?25l
+[35d[J[37d[?12l[?25h[37;1H[?1049l[23;0;0t
+[?1l>[?2004l
+[K[master 334665c] new file added.
+ Date: Mon Dec 16 05:01:38 2024 +0000
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 wrong_commit.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git log
+[?2004l
+[?1h=
+[33mcommit 334665c58c0cfbd615c6a412f7d74f2a345e3c8b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m[m
+Author: Vaibhav Nagrale <vaibhav.nagrale@tigeranalytics.com>[m
+Date:   Mon Dec 16 05:01:38 2024 +0000[m
+[m
+    new file added.[m
+[m
+[33mcommit 92af7685ac9903d7607b54cced9f9324e5543244[m[33m ([m[1;31morigin/master[m[33m)[m[m
+Author: Vaibhav-Nagrale <vaibhav.nagrale@tigeranalytics.com>[m
+Date:   Mon Dec 16 10:27:36 2024 +0530[m
+[m
+    Create test.txt[m
+    [m
+    temporary test file created[m
+[m
+[33mcommit ddb030590d86c2611b06ccfadf4618ef0a927d60[m[33m ([m[1;31morigin/tamlep_w[m [33m[m[33m[m[1;31mork[m[33m, [m[1;32mtamlep_work[m[33m)[m[m
+Author: Vaibhav Nagrale <vaibhav.nagrale@tigeranalytics.com>[m
+Date:   Mon Dec 16 04:49:24 2024 +0000[m
+[m
+    new_file added[m
+[m
+[33mcommit 480746fdd2c680bfa8285d8a228db94afbefcdb0[m[m
+Author: Vaibhav Nagrale <vaibhav.nagrale@tigeranalytics.com>[m
+Date:   Mon Dec 16 03:02:54 2024 +0000[m
+[m
+    created readme and txt file[m
+
+[K[?1l>[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git reset --soft HEAD~1
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git log
+[?2004l
+[?1h=
+[33mcommit 92af7685ac9903d7607b54cced9f9324e5543244[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m,[m [33m[m[33m[m[1;36m[m[33m[m[1;32m[m[33m [m[1;31morigin/master[m[33m)[m[m
+Author: Vaibhav-Nagrale <vaibhav.nagrale@tigeranalytics.com>[m
+Date:   Mon Dec 16 10:27:36 2024 +0530[m
+[m
+    Create test.txt[m
+    [m
+    temporary test file created[m
+[m
+[33mcommit ddb030590d86c2611b06ccfadf4618ef0a927d60[m[33m ([m[1;31morigin/tamlep_w[m [33m[m[33m[m[1;31mork[m[33m, [m[1;32mtamlep_work[m[33m)[m[m
+Author: Vaibhav Nagrale <vaibhav.nagrale@tigeranalytics.com>[m
+Date:   Mon Dec 16 04:49:24 2024 +0000[m
+[m
+    new_file added[m
+[m
+[33mcommit 480746fdd2c680bfa8285d8a228db94afbefcdb0[m[m
+Author: Vaibhav Nagrale <vaibhav.nagrale@tigeranalytics.com>[m
+Date:   Mon Dec 16 03:02:54 2024 +0000[m
+[m
+    created readme and txt file[m
+
+[K[?1l>[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls
+[?2004l
+README.md  new_file.txt  req.txt  test.txt  wrong_commit.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git status
+[?2004l
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   wrong_commit.txt[m
+
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ cd ..
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~ [01;32mvaibhav@TIGER06026[00m:[01;34m~[00m$ ls
+[?2004l
+[0m[01;34mDesktop[0m                            [01;34mgit_work[0m  [01;34mminiconda3[0m
+Miniconda3-latest-Linux-x86_64.sh  [01;34mjupyter[0m   my_unix_session
+[?2004h(base) ]0;vaibhav@TIGER06026: ~ [01;32mvaibhav@TIGER06026[00m:[01;34m~[00m$ rm -rf[K git  [K[K[K[K[K[K[K[K[K   ls
+[?2004l
+[0m[01;34mDesktop[0m                            [01;34mjupyter[0m     my_unix_session
+Miniconda3-latest-Linux-x86_64.sh  [01;34mminiconda3[0m
+[?2004h(base) ]0;vaibhav@TIGER06026: ~ [01;32mvaibhav@TIGER06026[00m:[01;34m~[00m$ git col[K[Klone [7mhttps://github.com/Vaibha[27m[7mv[27m[7m-Nagrale/git_work.git[27m[A
+(base) ]0;vaibhav@TIGER06026: ~ [01;32mvaibhav@TIGER06026[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[Chttps://github.com/Vaibhav-Nagrale/git_work.git
+[?2004l
+Cloning into 'git_work'...
+remote: Enumerating objects: 8, done.[K
+remote: Counting objects:  12% (1/8)[K
+remote: Counting objects:  25% (2/8)[K
+remote: Counting objects:  37% (3/8)[K
+remote: Counting objects:  50% (4/8)[K
+remote: Counting objects:  62% (5/8)[K
+remote: Counting objects:  75% (6/8)[K
+remote: Counting objects:  87% (7/8)[K
+remote: Counting objects: 100% (8/8)[K
+remote: Counting objects: 100% (8/8), done.[K
+remote: Compressing objects:  16% (1/6)[K
+remote: Compressing objects:  33% (2/6)[K
+remote: Compressing objects:  50% (3/6)[K
+remote: Compressing objects:  66% (4/6)[K
+remote: Compressing objects:  83% (5/6)[K
+remote: Compressing objects: 100% (6/6)[K
+remote: Compressing objects: 100% (6/6), done.[K
+remote: Total 8 (delta 1), reused 4 (delta 0), pack-reused 0 (from 0)[K
+Receiving objects:  12% (1/8)
+Receiving objects:  25% (2/8)
+Receiving objects:  37% (3/8)
+Receiving objects:  50% (4/8)
+Receiving objects:  62% (5/8)
+Receiving objects:  75% (6/8)
+Receiving objects:  87% (7/8)
+Receiving objects: 100% (8/8)
+Receiving objects: 100% (8/8), done.
+Resolving deltas:   0% (0/1)
+Resolving deltas: 100% (1/1)
+Resolving deltas: 100% (1/1), done.
+[?2004h(base) ]0;vaibhav@TIGER06026: ~ [01;32mvaibhav@TIGER06026[00m:[01;34m~[00m$ ls
+[?2004l
+[0m[01;34mDesktop[0m                            [01;34mgit_work[0m  [01;34mminiconda3[0m
+Miniconda3-latest-Linux-x86_64.sh  [01;34mjupyter[0m   my_unix_session
+[?2004h(base) ]0;vaibhav@TIGER06026: ~ [01;32mvaibhav@TIGER06026[00m:[01;34m~[00m$ cd git_work/
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls
+[?2004l
+README.md  new_file.txt  req.txt  test.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls -a
+[?2004l
+[0m[01;34m.[0m  [01;34m..[0m  [01;34m.git[0m  README.md  new_file.txt  req.txt  test.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git branch
+[?2004l
+[?1h=
+* [32mmaster[m[m
+
+[K[?1l>[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls
+[?2004l
+README.md  new_file.txt  req.txt  test.txt
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ pq[Kwd
+[?2004l
+/home/vaibhav/git_work
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git tag v0.1
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git tag
+[?2004l
+[?1h=
+v0.1[m
+
+[K[?1l>[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git psh[K[Kush origin v0.1
+[?2004l
+Username for 'https://github.com': Vaibhav N  -Nagrale
+Password for 'https://Vaibhav-Nagrale@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Vaibhav-Nagrale/git_work.git/'
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git ps[Kush v0.1'[K
+[?2004l
+fatal: 'v0.1' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git push v0.1origin v0.1
+[?2004l
+Username for 'https://github.com': ^C
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git psh[K[Kush
+[?2004l
+Username for 'https://github.com': ^C
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git push origin v0.1[7Pv0.1origin v0.1tag[K v0.1pwd[K[1Plsgit branch[5Pls -a[Kcd git_work/ls[Kgit clone https://github.com/Vaibhav-Nagrale/git_work.git[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone https://github.com/Vaibhav-Nagrale/git_work.git[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ ls[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..git statusls[Kgit logreset --soft HEAD~1log[Kcommit --amendmend[2Pammendlog[Kcommit -m "h"[7Pstatus[1Padd .touch wrong_commit.txt[9Pcat test.txt ls[Kcat test.txt touch wrong_commit.txt[13Pgit add .statuscommit -m "h"log[Kcommit -m "h"[7Pstatus[1Padd .touch wrong_commit.txt[9Pcat test.txt ls[Kgit pull origin master[Kls[Kgit statuspush origin master[K[1Pshls[Kgit merge tamlep_work [12Pbranchls[Kgit checkout masterpush[Kcommit -m "new_file added"[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[5Padd new_file.txt 
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pstatustouch new_file.txtgit push --set-upstream origin tamlep_work[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[C[C[C[C[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbranch[4Pbranchgit checkout tamlep_work [2Pbranch[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcheckout master[8Pbranch checkout -b tamlep_work[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[C[4Ppush origin master
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cremote set-url origin https://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@github.com/Vaibhav-Nagrale/git_work
+[?2004l
+[?2004h(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ git remote set-url origin https://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@github.com/Vaibhav-Nagrale/git_work[A[A
+(base) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ [C[C[C[Cpush[K
+
+[K
+
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C origin v0.1
+[?2004l
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Vaibhav-Nagrale/git_work
+ * [new tag]         v0.1 -> v0.1
+
+[?2004h(tamlep) ]0;vaibhav@TIGER06026: ~/git_work [01;32mvaibhav@TIGER06026[00m:[01;34m~/git_work[00m$ exit
+[?2004l
+exit
+
+Script done on 2024-12-16 04:04:32+00:00 [COMMAND_EXIT_CODE="0"]
